@@ -74,8 +74,8 @@ class Main(QMainWindow):
 
 	def getSatInfo(self):
 		satInfo = self.satupdater.getSatInfo()
-		self.norad_label.setText(str(satInfo[1]))
-		self.name_label.setText(str(satInfo[0]))
+		self.norad_label.setText(str(satInfo[0]))
+		self.name_label.setText(str(satInfo[1]))
 		self.sma_label.setText(str(int(satInfo[2])))
 		self.ecc_label.setText(str((satInfo[3])))
 		self.incl_label.setText(str((satInfo[4])))
