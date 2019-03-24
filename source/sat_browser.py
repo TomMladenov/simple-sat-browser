@@ -115,7 +115,7 @@ class SatUpdater(QThread):
 				t = datetime.datetime.now(timezone)
 				self.data.emit(self.sat.getSkyPosition(lat, lon, ts, t))
 				self.time.emit(str(t))
-				time.sleep(0.1)
+				time.sleep(0.5)
 
 
 if __name__ == '__main__':
