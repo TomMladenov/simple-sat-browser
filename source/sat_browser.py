@@ -76,12 +76,10 @@ class Main(QMainWindow):
 		satInfo = self.satupdater.getSatInfo()
 		self.norad_label.setText(str(satInfo[0]))
 		self.name_label.setText(str(satInfo[1]))
-		self.sma_label.setText(str(int(satInfo[2])))
-		self.ecc_label.setText(str((satInfo[3])))
-		self.incl_label.setText(str((satInfo[4])))
-		self.ra_label.setText(str(satInfo[5]))
-		self.perigee_label.setText(str(int(satInfo[6])))
-		self.ma_label.setText(str(satInfo[7]))
+		self.sma_label.setText(str(int(satInfo[2])) + " km")
+		self.ecc_label.setText(str(round(satInfo[3], 3)) + " rad")
+		self.incl_label.setText(str(round(satInfo[4], 3)) + " rad")
+		self.ma_label.setText(str(round(satInfo[7], 3)) + " rad")
 
 
 
