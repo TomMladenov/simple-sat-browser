@@ -9,7 +9,7 @@
 
 ## Running the script
 
-Download some .tle text files from https://www.celestrak.com/NORAD/elements/ and put them in the tle folder.
+Download some TLE text files from https://www.celestrak.com/NORAD/elements/ and put them in the /tle folder.
 
 Run with:
 
@@ -26,4 +26,4 @@ to make sure that it has current information about both leap seconds and the ori
 simple-sat-browser reads satellites from a TLE file and builds satellite objects.
 These can then be selected and live data displayed about the satellite.
 
-![alt text][img/screenshot.png]
+![alt text](img/screenshot.png)
